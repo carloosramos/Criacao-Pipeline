@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline Automatizada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body { background-color: #f6f6f6; }
+    </style>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 100vh; width: 100%; row-gap: 2rem; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <h1 style="font-size: 3rem;">Pipeline Automatizada</h1>
+        <img id="emoji-feliz" style="display: none; width: 20rem; height: 20rem;" src="./src/img/sep.png" alt="Sep." />
+        <img id="emoji-triste" style="width: 20rem; height: 20rem;" src="./src/img/caixa.png" alt="Caixa." />
+        <button id="button-feliz" onclick="toggleDisplay('emoji-triste', 'emoji-feliz', 'button-feliz', 'button-triste' )" style="width: fit-content; font-size: 1.5rem; padding: 0.5rem; color: #f6f6f6; cursor: pointer; background-color: #141414; border-radius: 15px;">Aperte para ver o mondial do parmera!</button>
+        <button id="button-triste" onclick="toggleDisplay('emoji-feliz', 'emoji-triste', 'button-triste', 'button-feliz' )" style="width: fit-content; font-size: 1.5rem; padding: 0.5rem; color: #f6f6f6; cursor: pointer; background-color: #141414; border-radius: 15px; display: none;">Aeeeeee!</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
